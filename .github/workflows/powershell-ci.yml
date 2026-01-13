@@ -1,0 +1,20 @@
+name: PowerShell CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Pester
+        shell: powershell
+        run: Install-Module Pester -Force -Scope CurrentUser
+
+      - name: Run code quality
+        shell: powershell
+        run: .\tools\Invoke-CodeQuality.ps1

@@ -1,0 +1,8 @@
+{
+  "OrgName": "Contoso",
+  "OutputPath": "C:\\ProgramData\\IntuneOpsToolkit\\Output",
+  "LogPath": "C:\\ProgramData\\IntuneOpsToolkit\\Logs",
+  "MinFreeDiskGB": 10,
+  "ReportFormat": "json",
+  "TimeZone": "Local"
+}
